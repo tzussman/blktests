@@ -14,6 +14,7 @@ HAVE_C_DEF = $(shell if printf '$(H)include <%s>\n$(H)ifdef %s\nHAVE_%s\n$(H)end
 		then echo 1;else echo 0; fi)
 
 C_TARGETS := \
+	atomic-write-torn \
 	bio-bounce-read \
 	bio-full-trim \
 	bio-trim-pin-leak \
